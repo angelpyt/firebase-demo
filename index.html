@@ -133,10 +133,9 @@
 						<!-- Create a section for showing tweet likes -->
 						<div class="likes">							<!-- Show a heart icon that, when clicked, 
 								passes your tweet to your "like" function -->
-							<i ng-click="like(tweet)" class="fa fa-heart"></i>
-							{{tweet.likes}}
+							<i ng-click="like(tweet)" class="fa fa-heart"></i>	
 							<!-- Show your total number of likes -->
-							<span></span>
+							<span>{{tweet.likes}}</span>
 						</div>
 					</div>
 				</div>
