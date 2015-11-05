@@ -98,11 +98,11 @@ myApp.controller('myCtrl', function($scope, $firebaseAuth, $firebaseArray, $fire
 			$scope.newTweet = ''
 			$scope.tweets.$save()
 		})
+	}
 
 	// Function to like a tweet
 	$scope.like = function (tweet) {
 		tweet.likes ++;
 		$scope.tweets.$save();
 	}
-}
-})
+});
